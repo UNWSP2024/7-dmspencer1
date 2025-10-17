@@ -8,6 +8,7 @@ def main():
     # Declare local variables
     number = 5
     number_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    #number_list = [23, 47, -2, 0, 5, 7, -6]
 
     # Display the number.
     print('Number:', number)
@@ -29,7 +30,12 @@ def main():
 # in the list that are greater than the number.
 def display_larger_than_n_list(n, n_list):
     # Write your code to display all of the numbers in the list that are greater than then number n. below
-    print('In display_larger_than_n_list')
+    greaterThanList = []
+    for number in n_list:
+        if number > n:
+            greaterThanList.append(number)
+
+    print(greaterThanList)
         
 # Call the main function.
 if __name__ == '__main__':
